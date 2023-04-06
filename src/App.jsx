@@ -1,6 +1,17 @@
 import React from "react";
 import styles from "./style";
-import { Navbar, Billing, Business, CardDeal, Clients, CTA, Footer, Hero, Stats, Testimonials} from "./components";
+import {
+  Navbar,
+  Billing,
+  Business,
+  CardDeal,
+  Clients,
+  CTA,
+  Footer,
+  Hero,
+  Stats,
+  Testimonials,
+} from "./components";
 
 const App = () => {
   return (
@@ -13,21 +24,27 @@ const App = () => {
 
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth} `}>
-          <Hero/>
+          <Hero />
         </div>
       </div>
 
       <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
-          <Stats/> 
-          <Business/> 
-          <Billing/> 
-          <CardDeal/> 
-          <Testimonials/>
-          <Clients/>
-          <CTA/> 
-          <Footer/>
-        </div>|
+          <Stats />
+          <Business />
+          <Billing />
+          <CardDeal />
+          <Testimonials />
+          <Clients />
+          <CTA />
+        </div>
+        |
+      </div>
+
+      <div className={`bg-footerBg_Color ${styles.paddingX} ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
+          <Footer />
+        </div>
       </div>
     </div>
   );
